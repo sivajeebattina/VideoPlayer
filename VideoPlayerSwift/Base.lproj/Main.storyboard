@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ecb-rx-0ZJ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Video Player-->
+        <scene sceneID="FaQ-Hs-iTb">
+            <objects>
+                <viewController id="FIo-ZZ-Nox" customClass="VideoPlayer" customModule="VideoPlayerSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KwG-mf-RM6"/>
+                        <viewControllerLayoutGuide type="bottom" id="VVF-WR-nu4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6uE-Di-aDT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.97639182650551415" green="0.96737697773101372" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video Player" id="ZMX-WO-IIc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPS-6M-qWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1223" y="-203"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="stp-hp-Gt6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ecb-rx-0ZJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MHf-Fq-J2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FIo-ZZ-Nox" kind="relationship" relationship="rootViewController" id="5iq-tT-G5f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzP-fD-lN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="411" y="-203"/>
+        </scene>
+    </scenes>
+</document>
